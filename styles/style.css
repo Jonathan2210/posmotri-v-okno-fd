@@ -42,11 +42,14 @@ ol {
 
 .content {
   max-width: 1140px;
-  min-height: 534px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: end;
   gap: 30px;
+}
+
+.result {
+  margin-top: 78px;
 }
 
 .result__video-container {
@@ -92,7 +95,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   color: #fff;
 }
@@ -245,6 +248,9 @@ ol {
   font-size: 18px;
   line-height: 90%;
   color: #fff;
+  display: -webkit-box;     
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
   line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -262,7 +268,7 @@ ol {
   width: 194px;
   min-height: 34px;
   background: none;
-  font-family: Oswald, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
